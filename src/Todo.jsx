@@ -46,7 +46,7 @@ export const Todo = () => {
     setIncompleteTodos(newIncompleteTodos);
   };
 
-  const isMaxLimitIncompeteTodos = incompleteTodos.length >= 5
+  // const isMaxLimitIncompeteTodos = incompleteTodos.length >= 5
 
   return (
     <>
@@ -54,11 +54,11 @@ export const Todo = () => {
         todoText={todoText}
         onChange={onChangeTodoText}
         onClick={onClickAdd}
-        disabled={isMaxLimitIncompeteTodos}
+      // disabled={isMaxLimitIncompeteTodos}
       />
-      {isMaxLimitIncompeteTodos (
+      {/* {isMaxLimitIncompeteTodos(
         <p>登録できるのは５個までになります。消化してください。</p>
-      )}
+      )} */}
 
       <IncompleteTodos
         onClickDelete={onClickDelete}
